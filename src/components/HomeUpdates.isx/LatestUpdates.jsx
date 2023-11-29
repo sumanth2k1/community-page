@@ -2,6 +2,8 @@ import React from 'react'
 import { Calendar, dayjsLocalizer } from 'react-big-calendar'
 import dayjs from 'dayjs'
 import 'react-big-calendar/lib/css/react-big-calendar.css'
+import bglogo from '../../assets/navlogo.png'
+
 
 const localizer = dayjsLocalizer(dayjs)
 
@@ -21,6 +23,9 @@ export default function LatestUpdates(props) {
 
   return (
     <div className="relative h-full">
+      <div className='h-full w-full flex absolute z-0 items-center justify-center'>
+          <img src={bglogo}  className=" opacity-20" />
+        </div>
       <div className="flex z-10 ">
         <h1
           style={{ background: 'linear-gradient(180deg, #FFBE99 0%, rgba(255, 190, 153, 0.77) 100%)' }}
@@ -29,7 +34,7 @@ export default function LatestUpdates(props) {
         </h1>
       </div>
       <div className='md:flex flex-row '>
-        <div className="rounded-15xl m-10 p-10" style={{ borderRadius: 15, backgroundImage: "linear-gradient(292deg, rgba(255, 210, 184, 0.70) 13.74%, rgba(255, 239, 229, 0.70) 92.18%)" }}>
+        <div className="rounded-15xl m-10 p-10" style={{ boxShadow: '0 -2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1)',borderRadius: 15, backgroundImage: "linear-gradient(292deg, rgba(255, 210, 184, 0.70) 13.74%, rgba(255, 239, 229, 0.70) 92.18%)" }}>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing. Consectetur voluptates quas vitae eius ipsum quidem. Sunt consequuntur assumenda, officia quam quia natus laudantium numquam nihil maiores, dicta dolorem alias odit.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing. Consectetur voluptates quas vitae eius ipsum quidem. Sunt consequuntur assumenda, officia quam quia natus laudantium numquam nihil maiores, dicta dolorem alias odit.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing. Consectetur voluptates quas vitae eius ipsum quidem. Sunt consequuntur assumenda, officia quam quia natus laudantium numquam nihil maiores, dicta dolorem alias odit.</p>
@@ -38,7 +43,12 @@ export default function LatestUpdates(props) {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing. Consectetur voluptates quas vitae eius ipsum quidem. Sunt consequuntur assumenda, officia quam quia natus laudantium numquam nihil maiores, dicta dolorem alias odit.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing. Consectetur voluptates quas vitae eius ipsum quidem. Sunt consequuntur assumenda, officia quam quia natus laudantium numquam nihil maiores, dicta dolorem alias odit.</p>
         </div>
-        <div className="p-10 rounded-15xl" style={{}}>
+        <div
+          className="p-10 rounded-lg m-10 bg-gray-50"
+          style={{
+            boxShadow: '0 -2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1)',
+          }}
+        >
           <Calendar
             localizer={localizer}
             events={events}

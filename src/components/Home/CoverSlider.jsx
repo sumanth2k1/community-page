@@ -3,6 +3,8 @@ import image1 from '../../assets/carel1.png'
 import image2 from '../../assets/carel3.png'
 import image3 from '../../assets/carel4.png'
 import image4 from '../../assets/carel5.png'
+// import ImageGallery from 'react-image-gallery';
+// import 'react-image-gallery/styles/scss/image-gallery.scss';
 import HeroSlider, {
   Slide,
   Nav,
@@ -11,6 +13,7 @@ import HeroSlider, {
 export const CoverSlider = () => {
     const images = [image1, image2, image3, image4];
   return (
+  // <ImageGallery items={images} />
   <HeroSlider
       orientation="horizontal"
       initialSlide={1}
