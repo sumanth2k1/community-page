@@ -3,6 +3,8 @@ import { CoverSlider } from './CoverSlider'
 import HomeAbout from '../About/HomeAbout'
 import LatestUpdates from '../HomeUpdates.isx/LatestUpdates'
 import HomeGallery from '../PhotoGallery/HomeGallery'
+import HomeFooter from '../Footer/HomeFooter'
+import { Contact } from '../Contact/Contact'
 
 export const Home = () => {
   return (
@@ -15,6 +17,8 @@ export const Home = () => {
     </div>    
     <LatestUpdates/>
     <HomeGallery/>
+    <Contact/>
+    {/* <HomeFooter/> */}
     </>
   )
 }

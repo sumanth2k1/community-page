@@ -4,6 +4,9 @@ import { Navbar } from './components/Navbar/Navbar';
 import { Home }  from './components/Home/Home';
 import { About } from './components/About/About';
 import { Contact } from './components/Contact/Contact';
+import { Maintainance } from './components/Maintainance/Maintainance';
+import HomeFooter from './components/Footer/HomeFooter';
+import OnlineServices from './components/OnlineServices/OnlineServices';
 
 
 function App() {
@@ -20,7 +23,12 @@ function App() {
       <Route path='/' index element={<Home />} />
       <Route path='/about' element={<About />} />
       <Route path='/contact' element={<Contact />} />
+      <Route path='/maintainance' element={<Maintainance />} />
+      <Route path='/onlineservices' element={<OnlineServices />} />
     </Routes>
+    <div className="-mt-50">
+    <HomeFooter/>
+    </div>
     </>
   )
 }

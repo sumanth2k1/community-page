@@ -1,51 +1,10 @@
 import React from 'react'
-import gal1 from '../../assets/gal1.jpg'
-import gal2 from '../../assets/gal2.jpg'
-import gal3 from '../../assets/gal3.jpg'
-import gal4 from '../../assets/gal4.jpg'
-import gal5 from '../../assets/gal5.jpg'
-import gal6 from '../../assets/gal6.jpg'
-import Gallery from 'react-photo-gallery'
+// import Gallery from 'react-photo-gallery'
+import ReactResponsiveGallery from 'react-responsive-gallery'
+import gallaryImage from '../../assets/galleryImages'
 
 export default function HomeGallery() {
-  const gallary = [
-    {
-      id: 1, 
-      galSrc: gal1, 
-      width: 4,
-      height: 3
-    },
-    {
-      id: 2, 
-      src: gal2, 
-      width: 4,
-      height: 3
-    },
-    {
-      id: 3, 
-      src: gal3, 
-      width: 4,
-      height: 3
-    },
-    {
-      id: 4, 
-      src: gal4, 
-      width: 4,
-      height: 3
-    },
-    {
-      id: 5, 
-      src: gal5, 
-      width: 4,
-      height: 3
-    },
-    {
-      id: 6, 
-      src: gal6, 
-      width: 4,
-      height: 3
-    },
-  ]
+
   return (
     <div>
       <div className="flex z-10">
@@ -55,7 +14,10 @@ export default function HomeGallery() {
           Gallery
         </h1>
       </div>
-      <Gallery photos={gallary} />
+      <div className='p-10'>
+        {/* <Gallery photos={gallaryImage} /> */}
+        <ReactResponsiveGallery useLightBox media={gallaryImage} />
+      </div>
     </div>
   )
 }

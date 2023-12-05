@@ -23,30 +23,30 @@ const navItems = [
   },
   {
     navTitle: "live darshan",
-    pageURL: "/livedarshan"
+    pageURL: "/maintainance"
   },
   {
     navTitle: "online services",
     pageURL: "/onlineservices",
-    subItems: [{
-      navTitle: "Donations",
-      pageURL: "/donations"
-    },{
-      navTitle: "Booking Services",
-      pageURL: "/bookingservices"
-    }]
+    // subItems: [{
+    //   navTitle: "Donations",
+    //   pageURL: "/donations"
+    // },{
+    //   navTitle: "Booking Services",
+    //   pageURL: "/bookingservices"
+    // }]
   },
   {
     navTitle: "photo gallery",
-    pageURL: "/photogallery"
+    pageURL: "/maintainance"
   },
   {
     navTitle: "social activity",
-    pageURL: "/socialactivity"
+    pageURL: "/maintainance"
   },
   {
     navTitle: "About",
-    pageURL: "/about"
+    pageURL: "/maintainance"
   },
   {
     navTitle: "Contact",
