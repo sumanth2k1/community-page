@@ -18,6 +18,7 @@ export const Contact = () => {
                                     label="Email"
                                     variant="outlined"
                                     type="email"
+                                    // InputProps={{ inputProps: { style: { color: '#fff' }}}}
                                     required
                                 />
                             </Grid>

@@ -23,7 +23,7 @@ const navItems = [
   },
   {
     navTitle: "live darshan",
-    pageURL: "/maintainance"
+    pageURL: "/liveDarshan"
   },
   {
     navTitle: "online services",
@@ -42,7 +42,7 @@ const navItems = [
   },
   {
     navTitle: "social activity",
-    pageURL: "/maintainance"
+    pageURL: "/socialactivity"
   },
   {
     navTitle: "About",
@@ -77,7 +77,7 @@ export const Navbar = () => {
 
   return (
     <AppBar position="sticky" color="transparent" style={{background:'rgba(255, 92, 0, 0.55)'}} sx={{backdropFilter:"blur(20px)"}}>
-      <Container maxWidth="xl" sx={{display:"flex",justifyContent:"space-around",alignItems:"center",width:"100%",m:1}}>
+      <Container maxWidth="xl" sx={{display:"flex",justifyContent:"space-around",alignItems:"center"}}>
         <Toolbar disableGutters>
 
           <Avatar alt="Remy Sharp" src={logo} sx={{ display: { xs: 'none', md: 'flex' }, mr: 4}}/>

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function HomeFooter() {
     return (
-        <footer className="text-white py-8 static w-full bottom-0" style={{ background: 'linear-gradient(180deg, #FFBE99 0%, rgba(255, 190, 153, 0.77) 100%)' }}>
+        <footer className="text-white py-8 w-full" style={{ background: 'linear-gradient(180deg, #FFBE99 0%, rgba(255, 190, 153, 0.77) 100%)' }}>
             <div className="container mx-auto flex flex-wrap justify-around">
                 {/* Column 1 */}
                 <div className="w-full gap-8 md:w-1/3 lg:w-1/4 px-4 mb-6 text-center">
@@ -40,7 +40,7 @@ export default function HomeFooter() {
                     </ul>
                 </div>
             </div>
-            <h1 className="text-red-800">© Shree, Sion Koliwada, Antophill, Mumbai 400037</h1>
+            <h1 className="text-red-800">© Shree Ayyappa Swami Bhakta Foundation, Sion Koliwada, Antophill, Mumbai 400037</h1>
         </footer>
     )
 }

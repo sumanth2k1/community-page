@@ -7,6 +7,8 @@ import { Contact } from './components/Contact/Contact';
 import { Maintainance } from './components/Maintainance/Maintainance';
 import HomeFooter from './components/Footer/HomeFooter';
 import OnlineServices from './components/OnlineServices/OnlineServices';
+import LiveDarshan from './components/LiveDarshan/LiveDarshan';
+import SocialActivity from './components/SocialServices/SocialActivity';
 
 
 function App() {
@@ -25,8 +27,10 @@ function App() {
       <Route path='/contact' element={<Contact />} />
       <Route path='/maintainance' element={<Maintainance />} />
       <Route path='/onlineservices' element={<OnlineServices />} />
+      <Route path='/liveDarshan' element={<LiveDarshan />} />
+      <Route path='/socialactivity' element={<SocialActivity />} />
     </Routes>
-    <div className="-mt-50">
+    <div className="">
     <HomeFooter/>
     </div>
     </>

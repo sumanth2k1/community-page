@@ -26,7 +26,7 @@ export const CoverSlider = () => {
         // marginTop:0,
         backgroundColor: "#000",
         height: "100%",
-        width: "100%",
+        // width: "100%",
         flex:1,
         flexDirection:'row'
       }}

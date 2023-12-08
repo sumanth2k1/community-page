@@ -19,7 +19,7 @@ export default function () {
             <img src={carel5} className="w-full rounded-md mb-5" alt="Image 1" />
             <img src={carel4} className="w-full rounded-md mt-5" alt="Image 2" />
           </div>
-          <div className="text-xl text-red-800 md:text-2xl max-w-md md:max-w-2xl text-center md:text-left">
+          <div className=" text-sm text-red-800 md:text-2xl max-w-md md:max-w-2xl text-center md:text-left">
             <p className="mb-4">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet nihil recusandae molestias corrupti tempora. Fuga, cum earum quis, esse, nobis laborum magni maxime dicta non odio perspiciatis saepe et iste?
             </p>
