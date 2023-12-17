@@ -1,9 +1,10 @@
 import React from 'react'
+import HomeAbout from './HomeAbout'
 
 export const About = () => {
   return (
-    <h1 className="text-9xl font-bold underline">
-      About
-    </h1>
+    <>
+      <HomeAbout/>
+    </>
   )
 }

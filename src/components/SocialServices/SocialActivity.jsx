@@ -1,5 +1,13 @@
 import React from 'react';
+import { Parallax } from 'react-parallax';
 import socialcover from '../../assets/socialcover.jpg';
+import bglogo from '../../assets/ayyappaSwamyLogo.png'
+import carel5 from '../../assets/carel5.png'
+import carel4 from '../../assets/carel4.png'
+import Marquee from "react-fast-marquee";
+import { activity } from '../../assets/galleryImages';
+
+
 
 export default function SocialActivity() {
     return (
@@ -15,10 +23,53 @@ export default function SocialActivity() {
                     </h2>
                 </div>
             </div>
+            <Parallax blur={0} bgImage={bglogo} bgImageStyle={{ height: '100%', width: 'auto', opacity: '0.3' }} bgImageAlt="bg-parallax" strength={500}>
+                <div>
+                    <div>
+                        <Marquee pauseOnHover={true} direction='right'>
+                            <div className='m-5'>
+                                <img className='h-64 rounded-2xl' src={activity[1]} />
+                            </div>
+                            <div className='m-5'>
+                                <img className='h-64 rounded-2xl' src={activity[2]} />
+                            </div>
+                            <div className='m-5'>
+                                <img className='h-64 rounded-2xl' src={activity[3]} />
+                            </div>
+                            <div className='m-5'>
+                                <img className='h-64 rounded-2xl' src={activity[4]} />
+                            </div>
+                            <div className='m-5'>
+                                <img className='h-64 rounded-2xl' src={activity[5]} />
+                            </div>
+                            <div className='m-5'>
+                                <img className='h-64 rounded-2xl' src={activity[6]} />
+                            </div>
+                            <div className='m-5'>
+                                <img className='h-64 rounded-2xl' src={activity[7]} />
+                            </div>
+                            <div className='m-5'>
+                                <img className='h-64 rounded-2xl' src={activity[8]} />
+                            </div>
+                            <div className='m-5'>
+                                <img className='h-64 rounded-2xl' src={activity[9]} />
+                            </div>
 
-            <div className='h-full w-full'>
-
-            </div>
+                        </Marquee>
+                    </div>
+                    <div>
+                        <div className="rounded-15xl m-5 p-3 md:m-10 md:p-10 lg:m-10 lg:p-10" style={{ boxShadow: '0 -2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: 15, backgroundImage: "linear-gradient(292deg, rgba(255, 210, 184, 0.70) 13.74%, rgba(255, 239, 229, 0.70) 92.18%)" }}>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing. Consectetur voluptates quas vitae eius ipsum quidem. Sunt consequuntur assumenda, officia quam quia natus laudantium numquam nihil maiores, dicta dolorem alias odit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing. Consectetur voluptates quas vitae eius ipsum quidem. Sunt consequuntur assumenda, officia quam quia natus laudantium numquam nihil maiores, dicta dolorem alias odit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing. Consectetur voluptates quas vitae eius ipsum quidem. Sunt consequuntur assumenda, officia quam quia natus laudantium numquam nihil maiores, dicta dolorem alias odit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing. Consectetur voluptates quas vitae eius ipsum quidem. Sunt consequuntur assumenda, officia quam quia natus laudantium numquam nihil maiores, dicta dolorem alias odit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing. Consectetur voluptates quas vitae eius ipsum quidem. Sunt consequuntur assumenda, officia quam quia natus laudantium numquam nihil maiores, dicta dolorem alias odit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing. Consectetur voluptates quas vitae eius ipsum quidem. Sunt consequuntur assumenda, officia quam quia natus laudantium numquam nihil maiores, dicta dolorem alias odit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing. Consectetur voluptates quas vitae eius ipsum quidem. Sunt consequuntur assumenda, officia quam quia natus laudantium numquam nihil maiores, dicta dolorem alias odit.</p>
+                        </div>
+                    </div>
+                </div>
+            </Parallax>
         </div>
     );
 }

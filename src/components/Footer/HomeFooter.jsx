@@ -21,7 +21,7 @@ export default function HomeFooter() {
 
                 {/* Column 2 */}
                 <div className="w-full md:w-1/3 lg:w-1/4 px-4 mb-6">
-                    <h2 className="text-lg font-semibold mb-4 text-red-800 text-2xl">Follow Us On</h2>
+                    <h2 className="text-lg font-semibold mb-4 text-red-800">Follow Us On</h2>
                     <ul>
                         <li className='text-red-800'>Email</li>
                         <li className='text-red-800'>Facebook</li>
@@ -31,7 +31,7 @@ export default function HomeFooter() {
 
                 {/* Column 3 */}
                 <div className="w-full md:w-1/3 lg:w-1/4 px-4 mb-6">
-                    <h2 className="text-lg font-semibold mb-4 text-red-800 text-2xl text-left">Reach Us On</h2>
+                    <h2 className="text-lg font-semibold mb-4 text-red-800 text-left">Reach Us On</h2>
                     <ul>
                         <li className='text-red-800 text-left'>For Online Services please do contact on
                             9892550915, 7977800664,</li>

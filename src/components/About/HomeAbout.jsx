@@ -1,20 +1,22 @@
 import React from 'react'
-import bglogo from '../../assets/navlogo.png'
+import { Parallax } from 'react-parallax';
+import bglogo from '../../assets/ayyappaSwamyLogo.png'
 import carel5 from '../../assets/carel5.png'
 import carel4 from '../../assets/carel4.png'
 
 export default function () {
   return (
     <section className="relative bg-cover bg-center py-20">
-      <div className="absolute inset-0 flex items-center justify-center">
-        <img src={bglogo} className="w-full h-full object-cover opacity-20" alt="Background" />
-      </div>
+      <Parallax blur={0} bgImage={bglogo} bgImageStyle={{height:'100%',width:'auto',opacity:'0.3'}} bgImageAlt="bg-parallax" strength={500}>
+      {/* <div className="absolute inset-0 flex items-center justify-center">
+        <img src={bglogo} className="h-full object-cover opacity-20" alt="Background" />
+      </div> */}
         <h1 className="text-3xl md:text-5xl w-full text-red-800 p-2 underline inline-block"
         style={{ background: 'linear-gradient(180deg, #FFBE99 0%, rgba(255, 190, 153, 0.77) 100%)' }}>
           About Us
         </h1>
       <div className="relative z-10 w-full text-white max-w-5xl mx-auto text-center">
-        <div className="md:flex items-center justify-center mt-10 space-y-6 md:space-y-0 md:space-x-6 p-5">
+        <div className="md:flex items-center gap-12 justify-center mt-10 space-y-6 md:space-y-0 md:space-x-6 p-5">
           <div className="md:w-2/5 flex-shrink-0">
             <img src={carel5} className="w-full rounded-md mb-5" alt="Image 1" />
             <img src={carel4} className="w-full rounded-md mt-5" alt="Image 2" />
@@ -32,6 +34,7 @@ export default function () {
           </div>
         </div>
       </div>
+      </Parallax>
     </section>
   )
 }

@@ -18,7 +18,7 @@ function App() {
   return (
     <>
     <div className='m-0 h-0 md:m-4 md:h-4 justify-center align-middle'>
-      SHREE SHANESHWARA CHAMUNDESHWARI AYYAPPA BHAKTA VRINDA
+      SHREE SHANESHWARA CHAMUNDESHWARI AYYAPPA BHAKTA VRINDA FOUNDATION
     </div>
     <Navbar />
     <Routes location={location} key={location.pathname}>

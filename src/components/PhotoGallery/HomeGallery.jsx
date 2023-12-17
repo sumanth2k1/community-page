@@ -1,7 +1,7 @@
 import React from 'react'
 // import Gallery from 'react-photo-gallery'
 import ReactResponsiveGallery from 'react-responsive-gallery'
-import gallaryImage from '../../assets/galleryImages'
+import {gallaryImage} from '../../assets/galleryImages'
 
 export default function HomeGallery() {
 

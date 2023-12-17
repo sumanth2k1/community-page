@@ -9,9 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import logo from '../../assets/navlogo.png';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -38,7 +36,7 @@ const navItems = [
   },
   {
     navTitle: "photo gallery",
-    pageURL: "/maintainance"
+    pageURL: "https://photos.app.goo.gl/fxrJvsJWLEcXeWPk9"
   },
   {
     navTitle: "social activity",
@@ -46,7 +44,7 @@ const navItems = [
   },
   {
     navTitle: "About",
-    pageURL: "/maintainance"
+    pageURL: "/about"
   },
   {
     navTitle: "Contact",
@@ -57,23 +55,23 @@ const navItems = [
 
 export const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  // const [anchorElUser, setAnchorElUser] = React.useState(null);
   const navigate = useNavigate();
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
+  // const handleOpenUserMenu = (event) => {
+  //   setAnchorElUser(event.currentTarget);
+  // };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
+  // const handleCloseUserMenu = () => {
+  //   setAnchorElUser(null);
+  // };
 
   return (
     <AppBar position="sticky" color="transparent" style={{background:'rgba(255, 92, 0, 0.55)'}} sx={{backdropFilter:"blur(20px)"}}>
@@ -124,7 +122,7 @@ export const Navbar = () => {
 
           <Box sx={{  flexGrow:0, display: { xs:'flex',sm:'flex', md: 'none'},justifyContent:"space-between"}}>
           <Avatar alt="Remy Sharp" src={logo} sx={{margin:1}}/>
-          <Typography justifySelf={"center"} alignSelf={"center"}>SHREE SHANESHWARA CHAMUNDESHWARI AYYAPPA BHAKTA VRINDA</Typography>
+          <Typography justifySelf={"center"} alignSelf={"center"}>SHREE SHANESHWARA CHAMUNDESHWARI AYYAPPA BHAKTA VRINDA FOUNDATION</Typography>
           <Box sx={{ flexGrow: 1 , margin:1}}>
             <IconButton
               size="large"
