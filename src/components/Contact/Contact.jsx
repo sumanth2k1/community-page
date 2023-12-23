@@ -10,7 +10,7 @@ export const Contact = () => {
             <div className="rounded-15xl m-5 p-5 md:m-10 md:p-10 lg:m-10 lg:p-10" style={{ boxShadow: '0 -2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: 15, backgroundImage: "linear-gradient(292deg, rgba(255, 210, 184, 0.70) 13.74%, rgba(255, 239, 229, 0.70) 92.18%)" }}>
                 <h1 className='text-red-800 text-4xl'>Contact Us</h1>
                 <Container>
-                    <form className="mt-8 space-y-6">
+                    <form action="https://getform.io/f/bf93ae85-ad9d-4749-8c99-24b8a973f70b" method="POST" encType="multipart/form-data" className="mt-8 space-y-6">
                         <Grid container spacing={2}>
                             <Grid item xs={12} sm={6}>
                                 <TextField
@@ -18,6 +18,7 @@ export const Contact = () => {
                                     label="Email"
                                     variant="outlined"
                                     type="email"
+                                    name='email'
                                     // InputProps={{ inputProps: { style: { color: '#fff' }}}}
                                     required
                                 />
@@ -27,7 +28,8 @@ export const Contact = () => {
                                     fullWidth
                                     label="Phone Number"
                                     variant="outlined"
-                                    type="tel"
+                                    type="text"
+                                    name='phone'
                                     required
                                 />
                             </Grid>
@@ -39,6 +41,8 @@ export const Contact = () => {
                                     fullWidth
                                     label="Subject"
                                     variant="outlined"
+                                    type='text'
+                                    name='subject'
                                     required
                                 />
                             </Grid>
@@ -50,6 +54,8 @@ export const Contact = () => {
                                     fullWidth
                                     label="Message"
                                     variant="outlined"
+                                    type='text'
+                                    name='message'
                                     multiline
                                     rows={4}
                                     required
@@ -59,6 +65,7 @@ export const Contact = () => {
 
                         <Button
                             type="submit"
+                            name="submit"
                             fullWidth
                             variant="contained"
                             style={{ backgroundColor: '#B74200', color: '#fff',width:90,height:40 }}

@@ -57,8 +57,8 @@ export default function LatestUpdates(props) {
   return (
     <div className="relative h-full bg-transparent">
       <div className='h-full w-full flex absolute z-0 items-center justify-center'>
-          <img src={bglogo}  className=" opacity-20" />
-        </div>
+        <img src={bglogo} className=" opacity-20" />
+      </div>
       <div className="flex z-10 ">
         <h1
           style={{ background: 'linear-gradient(180deg, #FFBE99 0%, rgba(255, 190, 153, 0.77) 100%)' }}
@@ -67,14 +67,20 @@ export default function LatestUpdates(props) {
         </h1>
       </div>
       <div className='lg:flex flex-row z-50'>
-        <div className="rounded-15xl m-5 p-3 md:m-10 md:p-10 lg:m-10 lg:p-10" style={{ boxShadow: '0 -2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1)',borderRadius: 15, backgroundImage: "linear-gradient(292deg, rgba(255, 210, 184, 0.70) 13.74%, rgba(255, 239, 229, 0.70) 92.18%)" }}>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing. Consectetur voluptates quas vitae eius ipsum quidem. Sunt consequuntur assumenda, officia quam quia natus laudantium numquam nihil maiores, dicta dolorem alias odit.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing. Consectetur voluptates quas vitae eius ipsum quidem. Sunt consequuntur assumenda, officia quam quia natus laudantium numquam nihil maiores, dicta dolorem alias odit.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing. Consectetur voluptates quas vitae eius ipsum quidem. Sunt consequuntur assumenda, officia quam quia natus laudantium numquam nihil maiores, dicta dolorem alias odit.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing. Consectetur voluptates quas vitae eius ipsum quidem. Sunt consequuntur assumenda, officia quam quia natus laudantium numquam nihil maiores, dicta dolorem alias odit.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing. Consectetur voluptates quas vitae eius ipsum quidem. Sunt consequuntur assumenda, officia quam quia natus laudantium numquam nihil maiores, dicta dolorem alias odit.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing. Consectetur voluptates quas vitae eius ipsum quidem. Sunt consequuntur assumenda, officia quam quia natus laudantium numquam nihil maiores, dicta dolorem alias odit.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing. Consectetur voluptates quas vitae eius ipsum quidem. Sunt consequuntur assumenda, officia quam quia natus laudantium numquam nihil maiores, dicta dolorem alias odit.</p>
+        <div className="rounded-15xl m-5 p-3 md:m-10 md:p-10 lg:m-10 lg:p-10" style={{ boxShadow: '0 -2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: 15, backgroundImage: "linear-gradient(292deg, rgba(255, 210, 184, 0.70) 13.74%, rgba(255, 239, 229, 0.70) 92.18%)" }}>
+          <h3 className="text-red-800 text-2xl md:text-4xl underline mb-10">Announcements</h3>
+          <ul className="text-left md:text-2xl mt-3 mb-3 list-disc list-inside text-red-700">
+          <li className='mt-3 mb-3'>25th December 2023, Monday.
+            maha pooja & maha annadana & 1118 ghee deepotsava.</li>
+          <li className='mt-3 mb-3'>Any kind of bookings or donations will be done at the front desk of the Trust office.</li>
+          <li className='mt-3 mb-3'>lucky draw tickets will be available at the reception of front desk.</li>
+          <li className='mt-3 mb-3'>Cultural Event on 25th December 2023, Monday after the Maha pooja Bhajan, stage performances, haldi kumkum & Lucky dip draw.</li>
+          <li className='mt-3 mb-3'>30th December 2023, Saturday.
+            padi pooja.</li>
+          <li className='mt-3 mb-3'>6th January 2023, Saturday.
+            Padi pooja.</li>
+            </ul>
+
         </div>
         <div
           className="m-5 p-5 md:m-10 md:p-10 lg:m-10 lg:p-10 rounded-lg bg-gray-0 z-50 h-auto"

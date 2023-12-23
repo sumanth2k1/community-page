@@ -44,7 +44,7 @@ const navItems = [
   },
   {
     navTitle: "About",
-    pageURL: "/about"
+    pageURL: "/maintainance"
   },
   {
     navTitle: "Contact",

@@ -1,8 +1,8 @@
 import React from 'react'
 import image1 from '../../assets/carel1.png'
 import image2 from '../../assets/carel3.png'
-import image3 from '../../assets/carel4.png'
-import image4 from '../../assets/carel5.png'
+import image3 from '../../assets/slider.jpg'
+import image4 from '../../assets/gal6.jpg'
 // import ImageGallery from 'react-image-gallery';
 // import 'react-image-gallery/styles/scss/image-gallery.scss';
 import HeroSlider, {
